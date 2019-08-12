@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 </head>
+
 <body>
 	<h1>Shopping list</h1>
+ 
+	<div class="a">
+			
+		<input class="addTopic" placeholder="enter topic word" value=" "> Enter topic word
+
+	</div>
+
+	<div class="b">
+		<br>
+		<span>
+			<input class="addDescription" placeholder="enter description" value=" "> Enter description
+			</br>
+		</span>
+	</div>
+
+		<div class="c">
+				<br>
+			<span>
+				<input class="addBudget" placeholder="enter budget amount" value=" "> Enter budget amount
+			</span>
+		</br>
+		</div>
+
+		<div class="d">
+			<br>
+			<button type="button" onclick="addingTopic()"> Add Item</button>
+			</br>
+		</div>
+
+		<div class="total">
+			<br>
+			<strong>Total Budget Amount:</strong>
+			<span class="total ">R<span class="billTotal">0.00</span> </span>
+			<br>
+	
+		</div>
+
+		<ul id="listitems" ></ul>
+
+		<script src="./shopping-list.js" charset="utf-8"></script>
+		<script src="./shopping-list-dom.js" charset="utf-8"></script>
 </body>
+
 </html>

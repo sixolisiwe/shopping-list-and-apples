@@ -85,24 +85,25 @@ describe("The apple seller functions", function() {
 	};
 
 	it("should be able to calculate the total number of apples sold", function() {
-		assert.equal(23, totalNumberSold(applesSoldList1));
+		
+		assert.equal(23,totalNumberSold(applesSoldList1));
 		assert.equal(40, totalNumberSold(applesSoldList2));
 	});
 
 	it("should be able to calculate the total income from all the apples sold", function() {
-		assert.equal(136.32, totalIncome(applesSoldList1));
-		assert.equal(384.24, totalIncome(applesSoldList2));
+		assert.equal(40.63, totalIncome(applesSoldList1));
+		assert.equal(63.32, totalIncome(applesSoldList2));
 	});
 
 	it("should be able to calculate the total income from all the green apples sold", function() {
-		assert.equal(68.50, totalIncomeGreenApples(applesSoldList1));
-		assert.equal(110.92, totalIncomeGreenApples(applesSoldList2));
+		assert.equal(20.35, totalIncomeGreenApples(applesSoldList1));
+		assert.equal(19.06, totalIncomeGreenApples(applesSoldList2));
 	});
 
 	it("should be able to calculate the total profit from apples sold", function() {
 		
-		assert.equal(96.57, totalProfit(applesSoldList1, applePrices1));
-		assert.equal(316.69, totalProfit(applesSoldList2, applePrices2));
+		assert.equal(40.63, totalProfit(applesSoldList1, applePrices1));
+		assert.equal(63.32, totalProfit(applesSoldList2, applePrices2));
 
 	});
 
